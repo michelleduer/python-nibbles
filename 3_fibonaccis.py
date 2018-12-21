@@ -82,12 +82,11 @@ def main():
     print(f'\nrecursing fibonacci values up to {limit}: ')
     help.multiline_print(flist)
 
-    limit = 5720992
-    start_list = fibonacci_iter(100)
+    limit = 51235324
+    start_list = fibonacci_iter(limit)
     even_flist = fibonacci_even(start_list)
-    flist = fibonacci_recurse(even_flist, limit)
     print(f'\neven fibonacci values up to {limit}: ')
-    help.multiline_print(flist, 2)
+    help.multiline_print(even_flist)
 
 
 if __name__ == '__main__':
