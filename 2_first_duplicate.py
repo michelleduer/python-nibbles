@@ -1,7 +1,6 @@
 import numpy as np
 from random import choices
-from custom_print import CustomPrint as P
-
+from helpers import Helpers as help
 
 def first_duplicate(population: [int]) -> int:
     """
@@ -33,7 +32,8 @@ def main():
     else:
         print(f'\nno duplicate values')
 
-    pr.pretty_print_list(randlist)
+    print(f'\noriginal list: ')
+    help.pretty_print_list(randlist)
 
 
 if __name__ == '__main__':

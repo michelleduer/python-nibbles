@@ -1,4 +1,4 @@
-class CustomPrint:
+class Helpers:
 
     def pretty_print_list(printlist: [int], total_lines: int=1):
         """
@@ -14,6 +14,5 @@ class CustomPrint:
         if step < 1:
             return
 
-        print(f'\nlist of values (pretty printed)')
         for i in range(0, length, step):
             print(f'{printlist[i:i + step]}')
