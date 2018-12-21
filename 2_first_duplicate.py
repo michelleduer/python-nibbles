@@ -1,26 +1,6 @@
 import numpy as np
 from random import choices
-
-
-def pretty_print(population: [int], total_lines: int=3):
-    """
-    Pretty prints the list to the total number of lines defined
-    :param population: the list to be printed
-    :param total_lines: the total number of lines to print
-    """
-    length = len(population)
-
-    if total_lines < 1:
-        return
-
-    step = length // total_lines
-    if step < 1:
-        return
-
-    print(f'\nlist of values (pretty printed)')
-    for i in range(0, length, step):
-        print(f'{population[i:i + step]}')
-
+from helpers import Helpers as help
 
 def first_duplicate(population: [int]) -> int:
     """
@@ -52,7 +32,8 @@ def main():
     else:
         print(f'\nno duplicate values')
 
-    pretty_print(randlist)
+    print(f'\noriginal list: ')
+    help.pretty_print_list(randlist)
 
 
 if __name__ == '__main__':
