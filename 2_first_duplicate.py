@@ -33,7 +33,7 @@ def main():
         print(f'\nno duplicate values')
 
     print(f'\noriginal list: ')
-    help.pretty_print_list(randlist)
+    help.multiline_print(randlist)
 
 
 if __name__ == '__main__':
