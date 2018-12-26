@@ -8,14 +8,12 @@ def first_duplicate_faster(population: [int]) -> int:
     :param population: the list of random values
     :return: the duplicate value
     """
-    length = len(population)
-    for first in range(length):
-        for second in range(first + 1, length):
-            for third in range(second - 1, first, -1):
-                if population[third] == population[second]:
-                    return population[third]
-            if population[first] == population[second]:
-                return population[first]
+    pop_counter = {}
+    for p in population:
+        if not pop_counter[p]:
+            pop_counter[p] = 1
+        else:
+            pop_counter[p] += 1
     return -1
 
 
