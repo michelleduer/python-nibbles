@@ -38,9 +38,9 @@ def first_duplicate(population: [int]) -> int:
 
 
 def main():
-    help = Helpers()
+    helper = Helpers()
     # Create a random list of numbers with replacement
-    randlist = help.create_random_numbers_with_choice(40, 99)
+    randlist = helper.create_random_numbers_with_choice(40, 99)
 
     """
     # (Brute Force) Find the first duplicated value in the list
@@ -51,7 +51,7 @@ def main():
         print(f'\nno duplicate values')
 
     print(f'\noriginal list: ')
-    help.multiline_print(randlist, 3)
+    helper.multiline_print(randlist, 3)
     """
 
     # (Faster) Find the first duplicated value in the list
@@ -62,7 +62,7 @@ def main():
         print(f'\nno duplicate values')
 
     print(f'\noriginal list: ')
-    help.multiline_print(randlist, 3)
+    helper.multiline_print(randlist, 3)
 
 if __name__ == '__main__':
     main()

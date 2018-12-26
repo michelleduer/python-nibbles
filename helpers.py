@@ -2,6 +2,7 @@ import numpy as np
 from random import choices
 from string import ascii_lowercase
 
+
 class Helpers:
 
     def multiline_print(self, printlist: [int], total_lines: int=1):
@@ -25,5 +26,5 @@ class Helpers:
         a_range = np.arange(upper_limit)
         return choices(a_range, k=list_size)
 
-    def create_random_chars_with_choice(self, list_size: int):
-        return choices(ascii_lowercase, k = list_size)
+    def create_random_chars_with_choice(self, list_size: int) -> [str]:
+        return choices(ascii_lowercase, k=list_size)
