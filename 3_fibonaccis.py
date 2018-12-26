@@ -1,4 +1,4 @@
-from helpers import Helpers as help
+from helpers import Helpers
 
 
 def fibonacci_recurse(flist: [int], limit: int) -> [int]:
@@ -72,21 +72,22 @@ def fibonacci_even(start_list: [int]) -> [int]:
 
 
 def main():
+    helper = Helpers()
     limit = 5432
     flist = fibonacci_iter(limit)
     print(f'\niterating fibonacci values up to {limit}: ')
-    help.multiline_print(flist)
+    helper.multiline_print(flist)
 
     limit = 1010
     flist = fibonacci_recurse([], limit)
     print(f'\nrecursing fibonacci values up to {limit}: ')
-    help.multiline_print(flist)
+    helper.multiline_print(flist)
 
     limit = 51235324
     start_list = fibonacci_iter(limit)
     even_flist = fibonacci_even(start_list)
     print(f'\neven fibonacci values up to {limit}: ')
-    help.multiline_print(even_flist)
+    helper.multiline_print(even_flist)
 
 
 if __name__ == '__main__':
