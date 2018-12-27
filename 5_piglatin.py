@@ -7,7 +7,12 @@
 #   pig_it('Hello world !')     # elloHay orldway !
 
 
-def pig_it(phrase):
+def pig_it(phrase: str) -> str:
+    """
+    Given a phrase, apply pig latin while maintaining punctuation
+    :param phrase: the phrase to apply pig latin on
+    :return: the phrase with pig latin applied
+    """
     add_ay = 'ay'
     pig_latin = ''
     length = len(phrase)
