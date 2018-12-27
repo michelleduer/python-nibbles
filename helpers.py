@@ -5,7 +5,7 @@ from string import ascii_lowercase
 
 class Helpers:
 
-    def multiline_print(self, printlist: [int], total_lines: int=1):
+    def multiline_print(self, printlist: [int], total_lines: int = 1):
         """
         Pretty prints the list to the total number of lines defined
         :param printlist: the list to be printed
